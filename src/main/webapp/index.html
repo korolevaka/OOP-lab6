@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Генерация таблицы</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        .input-block {
+            margin: 10px auto;
+            width: 300px;
+            text-align: left;
+        }
+        input, button {
+            width: 100%;
+            padding: 5px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Генератор таблицы</h1>
+
+<form action="table" method="post">
+    <div class="input-block">
+        <label for="title">Заголовок таблицы:</label>
+        <input type="text" id="title" name="title" required>
+    </div>
+
+    <div class="input-block">
+        <label for="rows">Количество строк:</label>
+        <input type="number" id="rows" name="rows" min="1" required>
+    </div>
+
+    <div class="input-block">
+        <label for="columns">Количество столбцов:</label>
+        <input type="number" id="columns" name="columns" min="1" required>
+    </div>
+
+    <div class="input-block">
+        <label for="color">Цвет фона:</label>
+        <input type="color" id="color" name="color">
+    </div>
+
+    <button type="submit">Создать таблицу</button>
+</form>
+
+</body>
+</html>
